@@ -1,6 +1,6 @@
 import "../styles/utility.css";
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
-import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
+import HeroRectangleTwo from "../assets/images/rectangletwo.png";
 import "../styles/hero.css";
 import Button from "../components/Button";
 import Logo from "../assets/logo.svg";
