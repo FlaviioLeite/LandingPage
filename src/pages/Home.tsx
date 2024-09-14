@@ -8,9 +8,19 @@ import "../styles/header.css";
 import "../styles/Solutions.css";
 import Close from "../assets/close.svg";
 import Menu from "../assets/hamburguer.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function Home() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+useEffect (() => {
+
+  if (showMobileMenu) {
+document.documentElement.style.overflowY = "hidden";
+  }
+else{
+  document.documentElement.style.overflowY = "";
+}
+},[showMobileMenu]); 
 
   return (
     <>
@@ -123,7 +133,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="Solutions">
+      <section  id="Solutions">
   
   <div className="section-title">
     <h2>Soluções Criativas e Eficazes para Impulsionar seu Negócio</h2>
@@ -135,7 +145,7 @@ export default function Home() {
   </div>
 
   
-  <div className="solutions">
+  <div className="solutions" >
     <div className="solution-item">
       <h3>Estratégia Digital</h3>
       <p>Criamos planos de marketing digital personalizados para o seu negócio, com foco em resultados e conversão.</p>
