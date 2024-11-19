@@ -3,6 +3,7 @@
     padding: var(--py-lg) var(--px-lg);
     background-color: var(--light-gray);
     font-family: var(--ff-sans);
+    height: 100vh;
   }
   
   .section-title h2 {
@@ -26,6 +27,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    
   }
   
   .solution-item {

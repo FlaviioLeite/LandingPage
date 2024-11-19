@@ -1,15 +1,30 @@
-import "../../src/styles/buttons.css";
+import "../styles/buttons.css";
 
-
-interface IButtonProps {
-    text: string;
-    secondary?: boolean;
+interface ButtonProps {
+  label: string;
+  variant?: "primary" | "secondary"; // Define variantes em vez de booleanos
+  isDisabled?: boolean;
+  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; // Nomeação diferente
+  buttonType?: "button" | "submit" | "reset"; // Mantém os tipos padrão
 }
 
-export default function Button({ text, secondary }: IButtonProps) {
-    return (
-        <button className={secondary ? "btn-secondary" : "btn-primary"}>
-            {text}
-        </button>
-    )
-}
+const Button: React.FC<ButtonProps> = ({
+  label,
+  variant = "primary",
+  isDisabled = false,
+  handleClick,
+  buttonType = "button", // Padrão permanece "button"
+}) => {
+  return (
+    <button
+      type={buttonType}
+      className={`btn-${variant}`} // Usa um prefixo padrão para variantes
+      disabled={isDisabled}
+      onClick={handleClick}
+    >
+      {label}
+    </button>
+  );
+};
+
+export default Button;
