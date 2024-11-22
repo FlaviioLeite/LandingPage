@@ -50,7 +50,7 @@ export default function Home() {
         method: "POST", // Define o método HTTP como POST.
         headers: {
           "Content-Type": "application/json", // Define o tipo de conteúdo da requisição como JSON.
-          Authorization: `Bearer `, // Adiciona um cabeçalho para autenticação (deve ser preenchido com o token correto).
+          Authorization: `Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAwOTMxNzQ2MjQ2MTY4NzYyNzMyIiwiZW1haWwiOiJiaWxvbGluaG8xMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IlFTeTNfWUZHRW1PQXBQcDRaTHVJZXciLCJuYmYiOjE3MzIyOTc2NDMsImlhdCI6MTczMjI5Nzk0MywiZXhwIjoxNzMyMzAxNTQzLCJqdGkiOiJlOGYxMjM0MzRhNTcyOWEwYjAyNDNmZTQ2MjQxMGZkMWQ4M2VmMWNlIn0.cuwwBR6MLhnHH3Jd6SqNoXarlSEXbBAW-8BwXZh8mYsLJRTC1Y690vNKfd9dk7w3nX5imy0ygSijG0oTyHR5ITL4wv0xXF2_bKSQqj97HnX93-aqsHVfZNGAe8SY150OqjTexDH5dqFBGhCSe4J5Y5qQERVB5yph_emFttvpqOZjDqycu7uPIZiNCfeTicKoSiO0P1VcFXYJwYDcJ1-kn8FvhhZ9OoQmi00l7HpKNnLqVz4jZc9kQ5Afznpsmdlqf28CoYTszKnscJpOFaZe1b4Iok6N3lT609NdXNUQ_XUVcdExrte4znVkpl3LhroXKT7DwUZueiTyuNseCwrWDw`, // Adiciona um cabeçalho para autenticação (deve ser preenchido com o token correto).
         },
         body: JSON.stringify(emailData),
         // Converte os dados do e-mail em uma string JSON para enviar no corpo da requisição.

@@ -4,7 +4,7 @@ interface ButtonProps {
   label: string;
   variant?: "primary" | "secondary"; // Define variantes em vez de booleanos
   isDisabled?: boolean;
-  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; // Nomeação diferente
+  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; 
   buttonType?: "button" | "submit" | "reset"; // Mantém os tipos padrão
 }
 
@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type={buttonType}
-      className={`btn-${variant}`} // Usa um prefixo padrão para variantes
+      className={`btn-${variant}`} 
       disabled={isDisabled}
       onClick={handleClick}
     >
