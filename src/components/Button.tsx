@@ -4,7 +4,7 @@ interface ButtonProps {
   label: string;
   variant?: "primary" | "secondary"; // Define variantes em vez de booleanos
   isDisabled?: boolean;
-  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; // Nomeação diferente
+  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; 
   buttonType?: "button" | "submit" | "reset"; // Mantém os tipos padrão
 }
 
