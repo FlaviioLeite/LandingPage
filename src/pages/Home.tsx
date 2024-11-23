@@ -18,7 +18,7 @@ import { useEffect, useState } from "react";
 import "../styles/pricing.css";
 import "../styles/contact.css";
 import "../styles/footer.css";
-//testando build
+
 export default function Home() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [email, setEmail] = useState("");
